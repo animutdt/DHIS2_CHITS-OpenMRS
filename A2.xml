@@ -1,0 +1,1006 @@
+<?xml version="1.0"?>
+<reportTemplates xmlns:d2="http://dhis2.org/schema/dxf/2.0">
+     
+     <dataElements>
+
+          <dataElement uid="NCq15lhqnuo" code="ASDIS" name="age_sex_distribution" type="int"/>
+	  <dataElement uid="nkOlqRCq8J9" code="HXHPN" name="hx_hypertension" type="int"/>
+	  <dataElement uid="yxoqRQbAWQf" code="BPLT14090" name="adult_bp_lessthan_140_90" type="int"/>
+	  <dataElement uid="LLPnUoQZH88" code="BPGT14090" name="adult_bp_greaterthan_140_90" type="int"/>
+	  <dataElement uid="omNTBZemMAf" code="BPGT180120" name="adult_bp_greaterthan_180_120" type="int"/>
+	  <dataElement uid="LMpAtaSUrMx" code="INTAKEHPNMEDS" name="intake_of_hypertensive_medicines" type="int"/>
+	  
+	  <dataElement uid="V0mNENVblkQ" code="HXDM" name="hx_diabetes" type="int"/>
+	  <dataElement uid="Mv8vNVM5neg" code="INTAKEOHA" name="intake_of_oha" type="int"/>
+	  
+	  <dataElement uid="VkZjE6L652o" code="BREASTCASCREENING" name="breast_cancer_screening" type="int"/>
+	  <dataElement uid="mEbkCXYVNBZ" code="CERVICALCACASCREENING" name="cervical_cancer_screening" type="int"/>
+	  
+	  <dataElement uid="NSOch8Lp4T0" code="DMPOLYURIAPOLYDYPSIAWTLOSS" name="dm_polyuria_polydypsia_wtloss" type="int"/>
+	  <dataElement uid="dQDiSnU4UtT" code="WCGTEQ80F90M" name="waistcircumference_gteq80f90m" type="int"/>
+	  
+     </dataElements>
+
+     
+     <disaggregations>
+	       <!--(0 - 1 Years, Male)-->
+	  <disaggregation uid="qYSsxO6u0zf" code="qYSsxO6u0zf" name="zero_one_years_male"/>
+	       <!--(0 - 1 Years, Female)-->
+	  <disaggregation uid="YDEW3nm5WC7" code="YDEW3nm5WC7" name="zero_one_years_female"/>
+	       <!--(2 - 5 Years, Male)-->
+	  <disaggregation uid="cOxEffR1G4w" code="cOxEffR1G4w" name="two_five_years_male"/>
+	       <!--(2 - 5 Years, Female)-->
+	  <disaggregation uid="KBpuiPCfwl2" code="KBpuiPCfwl2" name="two_five_years_female"/>
+	       <!--(6 - 15 Years, Male)-->
+	  <disaggregation uid="WgqPg1sOB2P" code="WgqPg1sOB2P" name="six_fifteen_years_male"/>
+	       <!--(6 - 15 Years, Female)-->
+	  <disaggregation uid="Stpt6peYojW" code="Stpt6peYojW" name="six_fifteen_years_female"/>
+	     <!--(16 - 24 Years, Male)-->
+	  <disaggregation uid="zQTU2sW2Lo5" code="zQTU2sW2Lo5" name="sixteen_twentyfour_years_male"/>
+	       <!--(16 - 24 Years, Female)-->
+	  <disaggregation uid="m4DCDIzvEEs" code="m4DCDIzvEEs" name="sixteen_twentyfour_years_female"/>
+	    <!--(25 - 59 Years, Male)-->
+	  <disaggregation uid="jQqJmpVotsc" code="jQqJmpVotsc" name="twentyfive_fiftynine_years_male"/>
+	      <!--(25 - 59 Years, Female)-->
+	  <disaggregation uid="MNsjmluOX4O" code="MNsjmluOX4O" name="twentyfive_fiftynine_years_female"/>
+	   <!--(60 Years And Above, Male)-->
+	  <disaggregation uid="v27BmfkE9yM" code="v27BmfkE9yM" name="sixty_yearsandabove_male"/>
+	      <!--(60 Years And Above, Female)-->
+	  <disaggregation uid="vP5gsrG4pZM" code="vP5gsrG4pZM" name="sixty_yearsandabove_female"/>
+
+	       <!--nw:  Age 0 - 1 Years -->
+	  <disaggregation uid="UXV1jECJCoV" code="UXV1jECJCoV" name="zero_one_years"/>
+	 
+	       <!--(Male, uncategorized, Member)-->
+	  <disaggregation uid="Gb0BGTbfg19" code="Gb0BGTbfg19" name="male_uncategorized_member"/>
+	       <!--(Female, Non-Pregnant, Member)-->
+	  <disaggregation uid="RJCP3pTXPpd" code="RJCP3pTXPpd" name="female_non-pregnant_member"/>
+	       <!--(Female, Pregnant, Member)-->
+	  <disaggregation uid="gfWVfTtytf3" code="gfWVfTtytf3" name="female_pregnant_member"/>      
+	       <!--(Male, uncategorized, Dependent)-->
+	  <disaggregation uid="kmAfodCt6AZ" code="kmAfodCt6AZ" name="female_pregnant_dependent"/>
+	       <!--(Female, Non-Pregnant, Dependent)-->
+	  <disaggregation uid="tF0Ng9gqkUW" code="tF0Ng9gqkUW" name="female_pregnant_dependent"/>
+	       <!--(Female, Pregnant, Dependent) -->
+	  <disaggregation uid="MUQxq9J7UYH" code="MUQxq9J7UYH" name="female_pregnant_dependent"/>
+     
+	       <!--(Male, Member)-->
+	  <disaggregation uid="JBMEkIpAf0I" code="JBMEkIpAf0I" name="male_member"/>  
+	       <!--(Female, Member)-->
+	  <disaggregation uid="UvGPjTHZ9BC" code="UvGPjTHZ9BC" name="female_member"/>  
+	       <!--(Male, Dependent)-->
+	  <disaggregation uid="CPfb5EpH7bu" code="CPfb5EpH7bu" name="male_dependent"/>
+	       <!--(Female, Dependent)-->
+	  <disaggregation uid="LsNCrxHrs2H" code="LsNCrxHrs2H" name="female_dependent"/>
+	       
+	       <!--(Member)-->
+	  <disaggregation uid="jU2qMGkPJ6p" code="jU2qMGkPJ6p" name="member"/>
+	       <!--(Dependent)-->
+	  <disaggregation uid="nVh4nHYTIPn" code="nVh4nHYTIPn" name="dependent"/>
+	       
+     </disaggregations>
+    
+  
+     <reportTemplate>
+	  <name>PCB Form A2</name>
+	  <uid>bazOE3Zgw8O</uid>
+	  <code>A2</code>
+	  <periodType>Monthly</periodType>
+	  <dataValueTemplates>
+     
+     
+	       <!-- AGE SEX DISTRIBUTION -->
+     
+	       <!-- de: Age - Sex Distribution         c: (0 - 1 years, Female)  -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="YDEW3nm5WC7">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		       
+	       <!-- de: Age - Sex Distribution         (2 - 5 Years, Male)  -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="qYSsxO6u0zf">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Age - Sex Distribution        2 - 5 Years, Male)  -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="cOxEffR1G4w">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Age - Sex Distribution         c: (2 - 5 years, Female)  -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="KBpuiPCfwl2">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+					       
+					       
+	       <!-- de: Age - Sex Distribution         c: (6 - 15 Years, Male)  -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="WgqPg1sOB2P">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>			
+					       
+	       <!-- de: Age - Sex Distribution         c: (6 - 15 Years, Female)  -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="Stpt6peYojW">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			    
+	       <!-- de: Age - Sex Distribution         c: (16 - 24 Years, Male)  -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="zQTU2sW2Lo5">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			    
+	       <!-- de: Age - Sex Distribution         c: (16 - 24 Years, Female)  -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="m4DCDIzvEEs">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			 
+	       <!-- de: Age - Sex Distribution         c: (25 - 59 Years, Male)  -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="jQqJmpVotsc">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			 
+	       <!-- de: Age - Sex Distribution         c: (25 - 59 Years, Female) -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="MNsjmluOX4O">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			 
+	       <!-- de: Age - Sex Distribution         c: (60 Years And Above, Male) -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="v27BmfkE9yM">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			 
+	       <!-- de: Age - Sex Distribution         c: (60 Years And Above, Female) -->
+	       <dataValueTemplate dataElement="ASDIS" disaggregation="vP5gsrG4pZM">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 28
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+	
+		
+			 
+	       <!--HISTORY OF DIAGNOSIS OF HYPERTENSION-->	  
+		       
+	       <!--de: History Of Diagnosis Of Hypertension         c: (Male, Uncategorized, Member) -->  
+	       <dataValueTemplate dataElement="HXHPN" disaggregation="Gb0BGTbfg19">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>  
+			 
+	       <!--de: History Of Diagnosis Of Hypertension         c: (Female, Non-Pregnant, Member) -->  
+	       <dataValueTemplate dataElement="HXHPN" disaggregation="RJCP3pTXPpd">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>    
+			 
+	       <!--de: History Of Diagnosis Of Hypertension         c: (Female, Pregnant, Member) -->  
+	       <dataValueTemplate dataElement="HXHPN" disaggregation="gfWVfTtytf3">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: History Of Diagnosis Of Hypertension         c: (Male, uncategorized, Dependent)-->  
+	       <dataValueTemplate dataElement="HXHPN" disaggregation="kmAfodCt6AZ">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>    
+			 
+	       <!--de: History Of Diagnosis Of Hypertension         c: (Female, Non-Pregnant, Dependent)-->  
+	       <dataValueTemplate dataElement="HXHPN" disaggregation="tF0Ng9gqkUW">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: History Of Diagnosis Of Hypertension         c: (Female, Pregnant, Dependent)-->  
+	       <dataValueTemplate dataElement="HXHPN" disaggregation="MUQxq9J7UYH">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+			 
+		  
+		    <!--HISTORY OF BP LESS THAN 140/90-->	  
+			 
+		       
+	       <!--de: History Of Diagnosis Of Hypertension         c: (Male, Uncategorized, Member) -->  
+	       <dataValueTemplate dataElement="BPLT14090" disaggregation="Gb0BGTbfg19">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>  
+			 
+	       <!--de: History Of Diagnosis Of Hypertension         c: (Female, Non-Pregnant, Member) -->  
+	       <dataValueTemplate dataElement="BPLT14090" disaggregation="RJCP3pTXPpd">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>    
+			 
+	       <!--de: History Of Diagnosis Of Hypertension         c: (Female, Pregnant, Member) -->  
+	       <dataValueTemplate dataElement="BPLT14090" disaggregation="gfWVfTtytf3">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: History Of Diagnosis Of Hypertension         c: (Male, uncategorized, Dependent)-->  
+		  <dataValueTemplate dataElement="BPLT14090" disaggregation="kmAfodCt6AZ">
+			  <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+		  </dataValueTemplate>    
+			 
+			 <!--de: History Of Diagnosis Of Hypertension         c: (Female, Non-Pregnant, Dependent)-->  
+		  <dataValueTemplate dataElement="BPLT14090" disaggregation="tF0Ng9gqkUW">
+			  <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+		  </dataValueTemplate>
+		  
+		  <!--de: History Of Diagnosis Of Hypertension         c: (Female, Pregnant, Dependent)-->  
+		  <dataValueTemplate dataElement="BPLT14090" disaggregation="MUQxq9J7UYH">
+			  <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+		  </dataValueTemplate>
+			 
+		  
+		  
+			  <!--HISTORY OF BP GREATER THAN 140/90-->	  
+			 
+		       
+	       <!--de: History Of BP Greater Than 140/90         c: (Male, Uncategorized, Member) -->  
+	       <dataValueTemplate dataElement="BPGT14090" disaggregation="Gb0BGTbfg19">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>  
+			 
+	       <!--de: History Of BP Greater Than 140/90        c: (Female, Non-Pregnant, Member) -->  
+	       <dataValueTemplate dataElement="BPGT14090" disaggregation="RJCP3pTXPpd">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>    
+			 
+	       <!--de:  History Of BP Greater Than 140/90          c: (Female, Pregnant, Member) -->  
+	       <dataValueTemplate dataElement="BPGT14090" disaggregation="gfWVfTtytf3">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de:  History Of BP Greater Than 140/90            c: (Male, uncategorized, Dependent)-->  
+	       <dataValueTemplate dataElement="BPGT14090" disaggregation="kmAfodCt6AZ">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>    
+			 
+	       <!--de:  History Of BP Greater Than 140/90            c: (Female, Non-Pregnant, Dependent)-->  
+	       <dataValueTemplate dataElement="BPGT14090" disaggregation="tF0Ng9gqkUW">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de:  History Of BP Greater Than 140/90            c: (Female, Pregnant, Dependent)-->  
+	       <dataValueTemplate dataElement="BPGT14090" disaggregation="MUQxq9J7UYH">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			   	  
+				  
+			  <!--HISTORY OF BP GREATER THAN 180/120-->	  
+			      
+	       <!--de:  History Of BP Greater Than 180/120            c: (Male, Uncategorized, Member) -->  
+	       <dataValueTemplate dataElement="BPGT180120" disaggregation="Gb0BGTbfg19">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>  
+			 
+	       <!--de: History Of BP Greater Than 180/120           c: (Female, Non-Pregnant, Member) -->  
+	       <dataValueTemplate dataElement="BPGT180120" disaggregation="RJCP3pTXPpd">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>    
+			 
+	       <!--de: History Of BP Greater Than 180/120          c: (Female, Pregnant, Member) -->  
+	       <dataValueTemplate dataElement="BPGT180120" disaggregation="gfWVfTtytf3">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: History Of BP Greater Than 180/120           c: (Male, uncategorized, Dependent)-->  
+	       <dataValueTemplate dataElement="BPGT180120" disaggregation="kmAfodCt6AZ">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>    
+			 
+	       <!--de: History Of BP Greater Than 180/120          c: (Female, Non-Pregnant, Dependent)-->  
+	       <dataValueTemplate dataElement="BPGT180120" disaggregation="tF0Ng9gqkUW">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: History Of BP Greater Than 180/120           c: (Female, Pregnant, Dependent)-->  
+	       <dataValueTemplate dataElement="BPGT180120" disaggregation="MUQxq9J7UYH">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			   
+      
+			  <!--INTAKE OF HYPERTENSIVE MEDICATIONS-->	  
+
+	       <!--de: Intake of Hypertensive Medications         c: (Male, Uncategorized, Member) -->  
+	       <dataValueTemplate dataElement="INTAKEHPNMEDS" disaggregation="Gb0BGTbfg19">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>  
+			 
+	       <!--de: Intake of Hypertensive Medications          c: (Female, Non-Pregnant, Member) -->  
+	       <dataValueTemplate dataElement="INTAKEHPNMEDS" disaggregation="RJCP3pTXPpd">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>    
+			 
+	       <!--de: Intake of Hypertensive Medications         c: (Female, Pregnant, Member) -->  
+	       <dataValueTemplate dataElement="INTAKEHPNMEDS" disaggregation="gfWVfTtytf3">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: Intake of Hypertensive Medications         c: (Male, uncategorized, Dependent)-->  
+	       <dataValueTemplate dataElement="INTAKEHPNMEDS" disaggregation="kmAfodCt6AZ">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>    
+			 
+	       <!--de: Intake of Hypertensive Medications          c: (Female, Non-Pregnant, Dependent)-->  
+	       <dataValueTemplate dataElement="INTAKEHPNMEDS" disaggregation="tF0Ng9gqkUW">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: Intake of Hypertensive Medications          c: (Female, Pregnant, Dependent)-->  
+	       <dataValueTemplate dataElement="INTAKEHPNMEDS" disaggregation="MUQxq9J7UYH">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			     
+			     
+			     
+		    <!-- HISTORY OF DIAGNOSIS OF DIABETES -->
+	       
+			 
+	       <!--de: History Of Diagnosis Of Diabetes         c: (Male, Member)-->  
+	       <dataValueTemplate dataElement="HXDM" disaggregation="JBMEkIpAf0I">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: History Of Diagnosis Of Diabetes         c: (Female, Member)-->  
+	       <dataValueTemplate dataElement="HXDM" disaggregation="UvGPjTHZ9BC">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: History Of Diagnosis Of Diabetes         c: (Male, Dependent)-->  
+	       <dataValueTemplate dataElement="HXDM" disaggregation="CPfb5EpH7bu">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+		  
+	       <!--de: History Of Diagnosis Of Diabetes         c: (Female, Dependent)-->  
+	       <dataValueTemplate dataElement="HXDM" disaggregation="LsNCrxHrs2H">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+		  
+	       <!--- INTAKE OF ORAL HYPOGLYCEMICS -->
+			 
+	       <!--de: Intake Of Oral Hypoglycemics        c: (Male, Member)-->  
+	       <dataValueTemplate dataElement="INTAKEOHA" disaggregation="JBMEkIpAf0I">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: Intake Of Oral Hypoglycemics        c: (Female, Member)-->  
+	       <dataValueTemplate dataElement="INTAKEOHA" disaggregation="UvGPjTHZ9BC">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: Intake Of Oral Hypoglycemics        c: (Male, Dependent)-->  
+	       <dataValueTemplate dataElement="INTAKEOHA" disaggregation="CPfb5EpH7bu">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: Intake Of Oral Hypoglycemics        c: (Female, Dependent)-->  
+	       <dataValueTemplate dataElement="INTAKEOHA" disaggregation="LsNCrxHrs2H">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+			 
+			 
+			 
+		       <!-- BREAST CANCER SCREENING -->
+		       
+	       <!--de: Breast Cancer Screening        c: (Member)-->  
+	       <dataValueTemplate dataElement="BREASTCASCREENING" disaggregation="jU2qMGkPJ6p">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>	
+		       
+	       <!--de: Breast Cancer Screening        c: (Dependent)-->  
+	       <dataValueTemplate dataElement="BREASTCASCREENING" disaggregation="nVh4nHYTIPn">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>	
+		       
+			 
+	       <!-- CERVICAL CANCER SCREENING -->
+		       
+	       <!--de: Cervical Cancer Screening        c: (Member)-->  
+	       <dataValueTemplate dataElement="CERVICALCACASCREENING" disaggregation="jU2qMGkPJ6p">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>	
+		       
+	       <!--de: Cervical Cancer Screening        c: (Dependent)-->  
+	       <dataValueTemplate dataElement="CERVICALCACASCREENING" disaggregation="nVh4nHYTIPn">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>	
+		           
+		    
+	       <!--- DM SIGNS AND SYMPTOMS OF POLYURIA, POLYDYPSIA, WTLOSS -->
+		    
+	       <!--de: Diabetes Mellitus Cases With Signs And Symptoms Of Polyuria, Polydipsia And Weight Loss        c: (Male, Member)-->  
+	       <dataValueTemplate dataElement="DMPOLYURIAPOLYDYPSIAWTLOSS" disaggregation="JBMEkIpAf0I">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: Diabetes Mellitus Cases With Signs And Symptoms Of Polyuria, Polydipsia And Weight Loss        c: (Female, Member)-->  
+	       <dataValueTemplate dataElement="DMPOLYURIAPOLYDYPSIAWTLOSS" disaggregation="UvGPjTHZ9BC">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: Diabetes Mellitus Cases With Signs And Symptoms Of Polyuria, Polydipsia And Weight Loss        c: (Male, Dependent)-->  
+	       <dataValueTemplate dataElement="DMPOLYURIAPOLYDYPSIAWTLOSS" disaggregation="CPfb5EpH7bu">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: Diabetes Mellitus Cases With Signs And Symptoms Of Polyuria, Polydipsia And Weight Loss        c: (Female, Dependent)-->  
+	       <dataValueTemplate dataElement="DMPOLYURIAPOLYDYPSIAWTLOSS" disaggregation="LsNCrxHrs2H">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		   
+	       <!--de: Waist Circumference ( >=80 Cm For Female And <=90 Cm For Male)       c: (Male, Member)-->  
+	       <dataValueTemplate dataElement="WCGTEQ80F90M" disaggregation="JBMEkIpAf0I">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: Waist Circumference ( >=80 Cm For Female And <=90 Cm For Male)       c: (Female, Member)-->  
+	       <dataValueTemplate dataElement="WCGTEQ80F90M" disaggregation="UvGPjTHZ9BC">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: Waist Circumference ( >=80 Cm For Female And <=90 Cm For Male)       c: (Male, Dependent)-->  
+	       <dataValueTemplate dataElement="WCGTEQ80F90M" disaggregation="CPfb5EpH7bu">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+		  
+	       <!--de: Waist Circumference ( >=80 Cm For Female And <=90 Cm For Male)       c: (Female, Dependent)-->  
+	       <dataValueTemplate dataElement="WCGTEQ80F90M" disaggregation="LsNCrxHrs2H">
+		    <annotation>
+		      select count(distinct p.person_id)
+		      from person p
+		      inner join obs o on o.person_id = p.person_id
+		      where p.voided = 0 and o.voided = 0
+		      and o.concept_id = 31
+		      and o.obs_datetime >= :startOfPeriod
+		      and o.obs_datetime &lt;= :endOfPeriod
+		      and o.location_id = :locationId
+		    </annotation>
+	       </dataValueTemplate>
+	       
+	  </dataValueTemplates>
+	  
+    </reportTemplate>
+     
+</reportTemplates>
