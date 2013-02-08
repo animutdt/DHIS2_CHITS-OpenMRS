@@ -1,0 +1,562 @@
+<?xml version="1.0"?>
+<reportTemplates xmlns:d2="http://dhis2.org/schema/dxf/2.0">
+     
+     <dataElements>
+
+          <dataElement uid="HAAmlK8a8Kz" code="BFPEDU" name="breast_feeding_education" type="int"/>
+	  <dataElement uid="RTl5mPvpksT" code="CFLSMOD" name="counselling_lf_modification" type="int"/>
+	  <dataElement uid="PuT0ufKGINQ" code="CFSC" name="counselling_fs_cessation" type="int"/>
+	  <dataElement uid="nuIxJr4vLpY" code="BM" name="body_measurments" type="int"/>
+	  <dataElement uid="w1vhtqyBm9P" code="DREX" name="digital_rectal_examination" type="int"/>
+	  <dataElement uid="t4G5Vy61EAT" code="CBC" name="complete_blood_count" type="int"/>
+	  
+	  <dataElement uid="a5P1EQa8K0h" code="FCLY" name="fecalysis" type="int"/>
+	  <dataElement uid="L6QO1We0kZn" code="SPMIC" name="sputum_microscopy" type="int"/>
+	  
+	  <dataElement uid="QEsqit8TEFb" code="FBS" name="fasting_blood_sugar" type="int"/>
+	  <dataElement uid="kR3CKnUI51F" code="LPROF" name="lipid_profile" type="int"/>
+	  
+	  <dataElement uid="Lbet2CYNK36" code="CXRAY" name="chest_x_ray" type="int"/>
+	  <dataElement uid="L98ovMQnYdT" code="MEMBERS" name="members" type="int"/>
+	  <dataElement uid="e53GxHPT4Kh" code="CONSU" name="consultation" type="int"/>
+	  <dataElement uid="nqaYpMZqNDy" code="URINALY" name="urinalysis" type="int"/>
+	  <dataElement uid="DBtghZ7PNV4" code="DEPNDS" name="dependents" type="int"/>
+	  <dataElement uid="lete0wu7xDK" code="PCBEX" name="periodic_cb_examination" type="int"/>
+	  <dataElement uid="bkeKrklaWli" code="VIWAA" name="visual_iw_acetic_acid" type="int"/>
+	  <dataElement uid="l7DHoJcQoQS" code="OTHBPM" name="obligated_thbp_measurement" type="int"/>
+	  <dataElement uid="FdXvwwJgqJg" code="RBPM" name="regular_bp_measurment" type="int"/>
+	  <dataElement uid="mNHn69WbUuK" code="OTPCBE" name="obligated_tpcb_examination" type="int"/>
+	  <dataElement uid="b1zdv5AOYJ7" code="OTVIWAA" name="obligated_tviw_acetic_acid" type="int"/>
+	  <dataElement uid="TBUeG5Fk6rQ" code="OTNHBPM" name="obligated_tnhbp_measurement" type="int"/>
+	  <dataElement uid="sppufBew1g2" code="OAVIWAA" name="obligated_aviw_acetic_acid" type="int"/>
+	  <dataElement uid="paZqkLNSRmi" code="OAPCBE" name="obligated_apcb_examination" type="int"/>
+	  <dataElement uid="VU2FxpChAGB" code="OANHBPM" name="obligated_anhbp_measurement" type="int"/>
+	  <dataElement uid="f2R7BDsMIB4" code="OAHBPM" name="obligated_ahbp_measurement" type="int"/>
+	  
+	  
+     </dataElements>
+
+     
+     <disaggregations>
+	       <!-- Given, Dependent  -->
+	  <disaggregation uid="myfBUBEhsTM" code="myfBUBEhsTM" name="given_dependent"/>
+	       <!-- Referred, Member  -->
+	  <disaggregation uid="NaXjTi9CCC6" code="NaXjTi9CCC6" name="reffered_member"/>
+	       <!-- Given, Member  -->
+	  <disaggregation uid="MATQcQq5AV3" code="MATQcQq5AV3" name="given_member"/>
+	       <!-- Referred, Dependent  -->
+	  <disaggregation uid="ieraUcKsaLc" code="ieraUcKsaLc" name="reffered_dependent"/>
+	       <!-- Male  -->
+	  <disaggregation uid="HrYigPmbhB0" code="HrYigPmbhB0" name="male"/>
+	       <!-- Female -->
+	  <disaggregation uid="cQBIzjRpaWQ" code="cQBIzjRpaWQ" name="female"/>
+	       <!-- Default -->
+	  <disaggregation uid="beBubnoFLUo" code="beBubnoFLUo" name="default"/>   
+
+     </disaggregations>
+    
+  
+     <reportTemplate>
+	  <name>PCB Form A4</name>
+	  <uid>oHOA3f6lU1a</uid>
+	  <code>A4</code>
+	  <periodType>Monthly</periodType>
+	  <dataValueTemplates>
+     
+     
+	       <!-- BREASTFEEDING PROGRAM EDUCATION -->
+     
+	       <!-- de: Breastfeeding Program Education         c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="BFPEDU" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+		       
+	       <!-- de: Breastfeeding Program Education         c: Given, Member  -->
+	       <dataValueTemplate dataElement="BFPEDU" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+	       
+		<!-- COUNSELLING FOR LIFESTYLE MODIFICATION -->
+			       
+	       <!-- de: Counselling For Lifestyle Modification   c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="CFLSMOD" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Counselling For Lifestyle Modification         c: Given, Member  -->
+	       <dataValueTemplate dataElement="CFLSMOD" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+					       
+					       
+	      <!-- COUNSELLING FOR SMOKING CESSATION -->
+			       
+	       <!-- de: Counselling For Smoking Cessation   c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="CFSC" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Counselling For Smoking Cessation         c: Given, Member  -->
+	       <dataValueTemplate dataElement="CFSC" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+			    
+	        
+		<!-- BODY MEASUREMENTS -->
+			       
+	       <!-- de: Body Measurements   c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="BM" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Body Measurements         c: Given, Member  -->
+	       <dataValueTemplate dataElement="BM" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+			 
+	        
+		<!-- DIGITAL RECTAL EXAMINATION -->
+			       
+	       <!-- de: Digital Rectal Examination   c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="DREX" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Digital Rectal Examination      c: Given, Member  -->
+	       <dataValueTemplate dataElement="DREX" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+			 
+	       
+		<!-- COMPLETE BLOOD COUNT-->
+			       
+	       <!-- de: Complete Blood Count  c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="CBC" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+	        <!-- de: Complete Blood Count  c: Reffered, Member  -->
+	       <dataValueTemplate dataElement="CBC" disaggregation="NaXjTi9CCC6">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Complete Blood Count     c: Given, Member  -->
+	       <dataValueTemplate dataElement="CBC" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+	        <!-- de: Complete Blood Count  c: Reffered, Dependent  -->
+	       <dataValueTemplate dataElement="CBC" disaggregation="ieraUcKsaLc">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+	
+		
+			 
+	       <!-- FECALYSIS-->
+			       
+	       <!-- de: Fecalysis  c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="FCLY" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+	        <!-- de: Fecalysis  c: Reffered, Member  -->
+	       <dataValueTemplate dataElement="FCLY" disaggregation="NaXjTi9CCC6">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Fecalysis     c: Given, Member  -->
+	       <dataValueTemplate dataElement="FCLY" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+	        <!-- de: Fecalysis    c: Reffered, Dependent  -->
+	       <dataValueTemplate dataElement="FCLY" disaggregation="ieraUcKsaLc">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+			 
+		  
+		  
+			  <!--SPUTUM MICROSCOPY-->	  
+			 
+		       
+	      <!-- de: Sputum Microscopy  c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="SPMIC" disaggregation="myfBUBEhsTM">
+
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+	        <!-- de: Sputum Microscopy  c: Reffered, Member  -->
+	       <dataValueTemplate dataElement="SPMIC" disaggregation="NaXjTi9CCC6">
+		    <annotation>
+		      
+
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Sputum Microscopy     c: Given, Member  -->
+
+	       <dataValueTemplate dataElement="SPMIC" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+
+	       </dataValueTemplate>
+	        <!-- de: Sputum Microscopy    c: Reffered, Dependent  -->
+	       <dataValueTemplate dataElement="SPMIC" disaggregation="ieraUcKsaLc">
+		    <annotation>
+		      
+
+		    </annotation>
+	       </dataValueTemplate>
+			   	  
+				  
+			  <!--FASTING BLOOD SUGAR-->	  
+			      
+	       <!-- de: Fasting Blood Sugar  c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="FBS" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+	        <!-- de: Fasting Blood Sugar  c: Reffered, Member  -->
+	       <dataValueTemplate dataElement="FBS" disaggregation="NaXjTi9CCC6">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Fasting Blood Sugar     c: Given, Member  -->
+	       <dataValueTemplate dataElement="FBS" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+	        <!-- de: Fasting Blood Sugar    c: Reffered, Dependent  -->
+	       <dataValueTemplate dataElement="FBS" disaggregation="ieraUcKsaLc">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+			   
+      
+			  <!--LIPID PROFILE-->	  
+
+	       <!-- de: Lipid Profile  c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="LPROF" disaggregation="myfBUBEhsTM">
+
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+
+	        <!-- de: Lipid Profile  c: Reffered, Member  -->
+	       <dataValueTemplate dataElement="LPROF" disaggregation="NaXjTi9CCC6">
+		    <annotation>
+		      
+
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Lipid Profile     c: Given, Member  -->
+
+	       <dataValueTemplate dataElement="LPROF" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+
+	       </dataValueTemplate>
+
+	        <!-- de: Lipid Profile    c: Reffered, Dependent  -->
+	       <dataValueTemplate dataElement="LPROF" disaggregation="ieraUcKsaLc">
+		    <annotation>
+		      
+
+		    </annotation>
+	       </dataValueTemplate>
+			     
+			     
+			     
+		    <!-- CHEST X-RAY -->
+	       
+			 
+	       <!-- de: Chest X-Ray  c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="CXRAY" disaggregation="myfBUBEhsTM">
+
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+
+	        <!-- de: Chest X-Ray  c: Reffered, Member  -->
+	       <dataValueTemplate dataElement="CXRAY" disaggregation="NaXjTi9CCC6">
+		    <annotation>
+		      
+
+		    </annotation>
+	       </dataValueTemplate>
+			       
+
+	       <!-- de: Chest X-Ray     c: Given, Member  -->
+	       <dataValueTemplate dataElement="CXRAY" disaggregation="MATQcQq5AV3">
+		    <annotation>
+
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+	        <!-- de: Chest X-Ray    c: Reffered, Dependent  -->
+	       <dataValueTemplate dataElement="CXRAY" disaggregation="ieraUcKsaLc">
+		    <annotation>
+		      
+
+		    </annotation>
+	       </dataValueTemplate>
+			 
+			 
+			 
+		       <!-- MEMBERS -->
+		       
+	      <!-- de: members   c: male  -->
+	       <dataValueTemplate dataElement="MEMBERS" disaggregation="HrYigPmbhB0">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: members  c: female -->
+	       <dataValueTemplate dataElement="MEMBERS" disaggregation="cQBIzjRpaWQ">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>	
+		       
+			 
+	      		 <!-- CONSULTATION -->
+		       
+	        <!-- de: Consultation         c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="CONSU" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+		       
+	       <!-- de: Consultation         c: Given, Member  -->
+	       <dataValueTemplate dataElement="CONSU" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>	
+		           
+		    
+	       		<!--- URINALYSIS -->
+		    
+	       <!-- de: Urinalysis  c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="URINALY" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+
+	        <!-- de: Urinalysis  c: Reffered, Member  -->
+	       <dataValueTemplate dataElement="URINALY" disaggregation="NaXjTi9CCC6">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+			       
+	       <!-- de: Urinalysis     c: Given, Member  -->
+	       <dataValueTemplate dataElement="URINALY" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+	        <!-- de: Urinalysis    c: Reffered, Dependent  -->
+	       <dataValueTemplate dataElement="URINALY" disaggregation="ieraUcKsaLc">
+		    <annotation>
+		      
+		    </annotation>
+	       </dataValueTemplate>
+		
+			<!-- DEPENDENTS -->
+		       
+	        <!-- de: Dependents         c: male  -->
+	       <dataValueTemplate dataElement="DEPNDS" disaggregation="HrYigPmbhB0">
+
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+		       
+	       <!-- de: Dependents         c: female  -->
+	       <dataValueTemplate dataElement="DEPNDS" disaggregation="cQBIzjRpaWQ">
+		    <annotation>
+		     
+
+		    </annotation>
+	       </dataValueTemplate>
+	      		 
+			<!-- PERIODIC CLINICAL BREAST EXAMINATION -->
+		       
+	        <!-- de: Periodic Clinical Breast Examination    c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="PCBEX" disaggregation="myfBUBEhsTM">
+
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+		       
+	       <!-- de: Periodic Clinical Breast Examination     c: Given, Member  -->
+	       <dataValueTemplate dataElement="PCBEX" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+
+		    </annotation>
+	       </dataValueTemplate>
+
+			<!-- VISUAL INSPECTION WITH ACETIC ACID -->
+		       
+	        <!-- de: Visual Inspection With Acetic Acid    c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="VIWAA" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+		       
+	       <!-- de: Visual Inspection With Acetic Acid     c: Given, Member  -->
+	       <dataValueTemplate dataElement="VIWAA" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+			<!-- OBLIGATED TARGET HYPERTENSIVE BP MEASUREMENT -->
+		       
+	        <!-- de: Obligated Target Hypertensive BP Measurement  c: Default  -->
+	       <dataValueTemplate dataElement="OTHBPM" disaggregation="beBubnoFLUo">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+			<!-- REGULAR BP MEASUREMENT -->
+		       
+	        <!-- de: Regular BP Measurement    c: Given, Dependent  -->
+	       <dataValueTemplate dataElement="RBPM" disaggregation="myfBUBEhsTM">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+		       
+	       <!-- de: Regular BP Measurement     c: Given, Member  -->
+	       <dataValueTemplate dataElement="RBPM" disaggregation="MATQcQq5AV3">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+			<!-- OBLIGATED TARGET PERIODIC CLINICAL BREAST EXAMINATION -->
+		       
+	        <!-- de: Obligated Target Periodic Clinical Breast Examination  c: Default  -->
+	       <dataValueTemplate dataElement="OTPCBE" disaggregation="beBubnoFLUo">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+			<!-- OBLIGATED TARGET VISUAL INSPECTION WITH ACETIC ACID -->
+		       
+	        <!-- de: Obligated Target Visual Inspection With Acetic Acid  c: Default  -->
+	       <dataValueTemplate dataElement="OTVIWAA" disaggregation="beBubnoFLUo">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+			<!-- OBLIGATED TARGET NON-HYPERTENSIVE BP MEASUREMENT -->
+		       
+	        <!-- de: Obligated Target Non-Hypertensive BP Measurement  c: Default  -->
+	       <dataValueTemplate dataElement="OTNHBPM" disaggregation="beBubnoFLUo">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+			<!-- OBLIGATED ACCOMPLISHMENT VISUAL INSPECTION WITH ACETIC ACID -->
+		       
+	        <!-- de: Obligated Accomplishment Visual Inspection With Acetic Acid  c: Default  -->
+	       <dataValueTemplate dataElement="OAVIWAA" disaggregation="beBubnoFLUo">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+			<!-- OBLIGATED ACCOMPLISHMENT PERIODIC CLINICAL BREAST EXAMINATION -->
+		       
+	        <!-- de: Obligated Accomplishment Periodic Clinical Breast Examination  c: Default  -->
+	       <dataValueTemplate dataElement="OAPCBE" disaggregation="beBubnoFLUo">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+			<!-- OBLIGATED ACCOMPLISHMENT NON-HYPERTENSIVE BP MEASUREMENT -->
+		       
+	        <!-- de: Obligated Accomplishment Non-Hypertensive BP Measurement  c: Default  -->
+	       <dataValueTemplate dataElement="OANHBPM" disaggregation="beBubnoFLUo">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+
+			<!-- OBLIGATED ACCOMPLISHMENT HYPERTENSIVE BP MEASUREMENT -->
+		       
+	        <!-- de: Obligated Accomplishment Hypertensive BP Measurement  c: Default  -->
+	       <dataValueTemplate dataElement="OAHBPM" disaggregation="beBubnoFLUo">
+		    <annotation>
+		     
+		    </annotation>
+	       </dataValueTemplate>
+	       
+	  </dataValueTemplates>
+	  
+    </reportTemplate>
+     
+</reportTemplates>
